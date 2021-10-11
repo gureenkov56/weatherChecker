@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://espritgames.ru/wp-content/uploads/sites/2/2020/04/Screenshot_2-4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main{
+  max-width: 300px;
+  margin: 0 auto;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+.city{
+  font-size: 1.1rem;
+}
+
+.temperature{
+  font-size: 3rem;
+  margin: 0;
+}
+
+.forecast,
+.currentWeather{
+  background-color: rgba(0, 79, 168, 0.4);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+}
