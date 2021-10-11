@@ -2,7 +2,7 @@
 let city = "Moscow";
 const apiKey = "dd6ccc78d1334bce8efc95b752b2267e";
 const currentWeatherUrl = `https://api.weatherbit.io/v2.0/current?key=${apiKey}&city=${city}`;
-const minutelyForecastUrl = `https://api.weatherbit.io/v2.0/forecast/minutely?key=${apiKey}&city=${city}`;
+const dailyForecastUrl = `http://api.weatherbit.io/v2.0/forecast/daily?city=${city}&key=${apiKey}`;
 const currentWeather = document.querySelector(".currentWeather");
 
 // functions
