@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-body{
+body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-image: url('https://espritgames.ru/wp-content/uploads/sites/2/2020/04/Screenshot_2-4.png');
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://espritgames.ru/wp-content/uploads/sites/2/2020/04/Screenshot_2-4.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main{
+.main {
   max-width: 300px;
   margin: 0 auto;
   height: 100vh;
@@ -20,23 +20,60 @@ body{
   color: white;
 }
 
-.wrapper{
+.wrapper {
   text-align: center;
 }
 
-.city{
+.city {
   font-size: 1.1rem;
 }
 
-.temperature{
+.temperature {
   font-size: 3rem;
   margin: 0;
 }
 
 .forecast,
-.currentWeather{
+.currentWeather {
   background-color: rgba(0, 79, 168, 0.4);
   border-radius: 4px;
   padding: 10px;
   margin: 10px;
+}
+
+.forecast__16days {
+  height: 220px;
+  overflow: auto;
+}
+
+.forecast__16days::-webkit-scrollbar {
+  display: none;
+}
+
+.forecast__16days__item {
+  background-color: rgba(128, 187, 255, 0.6);
+  margin: 10px;
+  padding: 0 5px;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast__16days__item__temp {
+  width: 100px;
+}
+
+.forecast__16days__item__lowTemp {
+  font-size: 0.8rem;
+  color: rgb(238, 238, 238);
+}
+
+.forecast__16days__item__icon {
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  padding: 2px;
+  background-color: #fff;
+  border-radius: 50%;
 }
