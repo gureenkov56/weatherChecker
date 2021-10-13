@@ -31,7 +31,7 @@ body {
   top: 40px;
   text-align: right;
   z-index: 2;
-  display: none;
+  display: block;
   opacity: 0;
   transition: all 1s;
 }
@@ -44,10 +44,11 @@ body {
 .whiteBgc{
   background-color: #fff;
   position: absolute;
+  right: 0;
   height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: none;
+  width: 10%;
+  
+  display: block;
   opacity: 0;
   transition: all 1s;
 }

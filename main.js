@@ -126,13 +126,9 @@ function addForecastTemplate(forecast){
 
 function toggleShowWhiteBgc(){
   if(isShowCityList){
-    whiteBgc.style.cssText = 'opacity: 0;'
-    let timer = setTimeout(() => {
-      whiteBgc.style.cssText = "display: none;";
-    }, 1000)
-    clearTimeout(timer);
+    whiteBgc.style.cssText = "opacity: 0; width: 10%";
   } else {
-    whiteBgc.style.cssText = "display: block; opacity: 1;";
+    whiteBgc.style.cssText = "opacity: 1; width: 100%";
   }
 }
 
@@ -149,12 +145,8 @@ function toggleColorGeo(){
 function toggleShowCityList() {
   if (isShowCityList) {
     cityList.style.cssText = "opacity: 0;";
-    let timer = setTimeout(() => {
-      cityList.style.cssText = "display: none;";
-    }, 1000);
-    clearTimeout(timer);
   } else {
-    cityList.style.cssText = "display: block; opacity: 1;";
+    cityList.style.cssText = "opacity: 1;";
   }
 }
 
