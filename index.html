@@ -8,28 +8,28 @@
     <title>Weather</title>
   </head>
   <body>
-    <!-- absolute position blocks -->
-    <div class="geoBlock" onclick='changeCityAnimation()'>
-      <p>
-        <img src="./assets/images/geo-icon.png" alt="geo">
-        Change city
-      </p>
-    </div>
-
-    <div class="cityList">
-      <ul>
-        <li onclick='setNewCity("Moscow")'>Moscow</li>
-        <li onclick='setNewCity("Saint Petersburg")'>Saint Petersburg</li>
-        <li onclick='setNewCity("Kazan")'>Kazan</li>
-        <li onclick='setNewCity("Novosibirsk")'>Novosibirsk</li>
-        <li onclick='setNewCity("Vladivostok")'>Vladivostok</li>
-      </ul>
-    </div>
+    
 
     <div class="whiteBgc"></div>
-    <!-- end absolute position blocks -->
 
     <div class="main">
+      <div class="geoBlock" onclick="changeCityAnimation()">
+        <p>
+          <img src="./assets/images/geo-icon.png" alt="geo" />
+          Change city
+        </p>
+      </div>
+
+      <div class="cityList">
+        <ul>
+          <li onclick='setNewCity("Moscow")'>Moscow</li>
+          <li onclick='setNewCity("Saint Petersburg")'>Saint Petersburg</li>
+          <li onclick='setNewCity("Kazan")'>Kazan</li>
+          <li onclick='setNewCity("Novosibirsk")'>Novosibirsk</li>
+          <li onclick='setNewCity("Vladivostok")'>Vladivostok</li>
+        </ul>
+      </div>
+
       <div class="wrapper">
         <div class="currentWeather">
           <p>Loading...</p>
