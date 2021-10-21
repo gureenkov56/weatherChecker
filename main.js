@@ -99,6 +99,7 @@ function addCurrentWeatherTemplate(city, temp, weatherName) {
     case "Drizzle":
     case "Heavy Drizzle":
     case "Light Rain":
+    case "Light rain":
     case "Moderate Rain":
     case "Light shower rain":
     case "Shower rain":
