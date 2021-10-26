@@ -1,7 +1,7 @@
 // state & data
 let isShowCityList = false;
 
-let city = "Vladivostok";
+let city = "Moscow";
 const apiKey = "dd6ccc78d1334bce8efc95b752b2267e";
 
 let currentWeatherUrl = `https://api.weatherbit.io/v2.0/current?key=${apiKey}&city=${city}`;
@@ -153,7 +153,7 @@ function addCurrentWeatherTemplate(city, temp, weatherName) {
 
   let currentWeatherTemplate = `
     
-    <p class="city" onclick='changeCity()' >${city}</p>
+    <p class="city">${city}</p>
 
     <p class="temperature">${temp} °С</p>
     <p class="weatherName">${weatherName}</p>
@@ -212,9 +212,9 @@ function toggleColorGeo() {
 
 function toggleShowCityList() {
   if (isShowCityList) {
-    cityList.style.cssText = "opacity: 0;";
+    cityList.style.cssText = "opacity: 0; display: none;";
   } else {
-    cityList.style.cssText = "opacity: 1;";
+    cityList.style.cssText = "opacity: 1; display: block;";
   }
 }
 
