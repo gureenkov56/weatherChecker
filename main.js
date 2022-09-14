@@ -5,7 +5,7 @@ let city = "Moscow";
 const apiKey = "dd6ccc78d1334bce8efc95b752b2267e";
 
 let currentWeatherUrl = `https://api.weatherbit.io/v2.0/current?key=${apiKey}&city=${city}`;
-let dailyForecastUrl = `http://api.weatherbit.io/v2.0/forecast/daily?city=${city}&key=${apiKey}`;
+let dailyForecastUrl = `https://api.weatherbit.io/v2.0/forecast/daily?city=${city}&key=${apiKey}`;
 
 const body = document.querySelector("body");
 const currentWeather = document.querySelector(".currentWeather");
@@ -60,7 +60,7 @@ async function sendRequestCurrent() {
 }
 
 async function sendRequestForecast() {
-  dailyForecastUrl = `http://api.weatherbit.io/v2.0/forecast/daily?city=${city}&key=${apiKey}`;
+  dailyForecastUrl = `https://api.weatherbit.io/v2.0/forecast/daily?city=${city}&key=${apiKey}`;
   try {
     let forecast = await fetch(dailyForecastUrl);
     return forecast.json();
